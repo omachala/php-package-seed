@@ -1,7 +1,7 @@
 {
     "name": "omachala/php-package-seed",
     "type": "library",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "license": "MIT",
     "homepage": "http://github.com/omachala/php-package-seed",
     "authors": [
