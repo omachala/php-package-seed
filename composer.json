@@ -1,0 +1,36 @@
+{
+    "name": "omachala/php-package-seed",
+    "type": "library",
+    "version": "0.0.0",
+    "license": "MIT",
+    "homepage": "http://github.com/omachala/php-package-seed",
+    "authors": [
+        {
+            "name": "Ondrej Machala",
+            "email": "o.machala@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "sniffer": "vendor/bin/phpcs src --standard=PSR2 -n --colors",
+        "fixer": "vendor/bin/phpcbf src --standard=PSR2 -w"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+        "squizlabs/php_codesniffer": "^3.2",
+        "mockery/mockery": "^1.1",
+        "php-coveralls/php-coveralls": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omachala\\PhpPackageSeed\\": "src/",
+            "Omachala\\PhpPackageSeed\\Tests\\": "tests/"
+        }
+    }
+
+}

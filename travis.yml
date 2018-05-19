@@ -1,0 +1,18 @@
+# Example https://github.com/travis-ci-examples/php/blob/master/.travis.yml
+
+language: php
+sudo: false
+
+php:
+  - 7
+
+before_script:
+  - composer install
+
+script: phpunit
+
+notifications:
+  email: false
+
+after_success:
+  - 'travis_retry php vendor/bin/php-coveralls -v'
